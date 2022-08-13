@@ -182,6 +182,7 @@ class ItemScrollController {
   ///
   /// If `false`, then [jumpTo] and [scrollTo] must not be called.
   bool get isAttached => _scrollableListState != null;
+  _ScrollablePositionedListState? get instance => _scrollableListState;
 
   _ScrollablePositionedListState? _scrollableListState;
 
